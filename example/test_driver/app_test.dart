@@ -14,12 +14,12 @@ Future<void> main() {
 
   final config = FlutterTestConfiguration.DEFAULT(
     steps,
-    featurePath: 'features/*.*.feature',
-    targetAppPath: 'test_driver/app.dart',
+    featurePath: 'test_driver/features/*.*.feature',
+    targetAppPath: 'example/test_driver/app.dart',
   )
     ..hooks = [
       HookExample(),
-      // AttachScreenshotOnFailedStepHook(), // takes a screenshot of each step failure and attaches it to the world object
+      //AttachScreenshotOnFailedStepHook(), // takes a screenshot of each step failure and attaches it to the world object
     ]
     ..customStepParameterDefinitions = [
       ColourParameter(),
@@ -28,7 +28,7 @@ Future<void> main() {
     ..verboseFlutterProcessLogs = true
     ..restartAppBetweenScenarios = true
     ..targetAppWorkingDirectory = '../'
-    ..targetAppPath = 'test_driver/app.dart';
+    ..targetAppPath = 'example/test_driver/app.dart';
   // ..buildFlavor = "staging" // uncomment when using build flavor and check android/ios flavor setup see android file android\app\build.gradle
   // ..targetDeviceId = "all" // uncomment to run tests on all connected devices or set specific device target id
   // ..tagExpression = '@smoke and not @ignore' // uncomment to see an example of running scenarios based on tag expressions

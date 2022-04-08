@@ -1,6 +1,7 @@
 Feature: Custom Parameter Example
   This test just logs the colour defined in the step
 
+  @smoke @color
   Scenario: Custom colour parameter
     Given I pick the colour red
     Given I pick the colour green

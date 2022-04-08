@@ -4,6 +4,7 @@ import 'package:flutter_driver/driver_extension.dart';
 
 void main() {
   // This line enables the extension
+  // Required to be able to automate the app and then runs your application
   enableFlutterDriverExtension();
 
   // Call the `main()` function of your app or call `runApp` with any widget you

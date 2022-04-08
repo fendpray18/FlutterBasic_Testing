@@ -2,6 +2,7 @@
 Fonctionnalité: Counter
   The counter should be incremented when the button is pressed.
 
+  @language
   Scénario: Counter increases when the button is pressed
     Etant donné que I pick the colour red
     Et I expect the "counter" to be "0"
